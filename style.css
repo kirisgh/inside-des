@@ -1,0 +1,189 @@
+/* -------------RESETS------------- */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+	list-style: none;
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	color: #2b2b2b;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+	line-height: 1.4;
+	background-color: var(--brown);
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* HEADER */
+
+.header {
+    background: var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header_branding {
+    margin-left: 15rem;
+}
+
+.header .header_nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 25rem;
+    font-family: Truculenta;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.header .header_nav ul li a{
+    color: var(--dark)
+}
+
+/* BANNER */
+
+.banner {
+    background: var(--secondary);
+    padding: 4rem;
+}
+
+.banner .banner_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h4 {
+    font-family: Truculenta;
+    letter-spacing: .5rem;
+}
+
+.banner h3 {
+    font-family: Truculenta;
+    letter-spacing: .9rem;
+    font-size: 5rem;
+    font-weight: bold;
+    max-width: 1rem;
+    align-items: center;
+}
+
+
+
+
+/* REPEATABLE DESIGNS */
+
+:root {
+--dark: #2b2b2b;
+--light: #fff;
+--primary: #1b8b83;
+--secondary: #cfa584;
+--tertiary: #d9d9d9;
+}
+
+@font-face {
+    font-family: Truculenta;
+    src: url(/Fonts/Truculenta-VariableFont_opsz\,wdth\,wght.ttf);
+}
