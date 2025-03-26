@@ -504,7 +504,7 @@ img {
 }
 
 .aboutStyle .aboutStyle_wrapper {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6rem;
