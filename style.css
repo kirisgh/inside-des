@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 /* -------------RESETS------------- */
-
-/* REPEATABLE DESIGNS */
 
 :root {
 	--font: "Truculenta", sans-serif;
@@ -11,7 +8,7 @@
 	--primary: #1b8b83;
 	--secondary: #cfa584;
 	--tertiary: #d9d9d9;
-	}
+}
 
 * {
 	-webkit-box-sizing: border-box;
@@ -134,42 +131,124 @@ img {
 /* HEADER */
 
 .header {
-    background: var(--tertiary);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: var(--tertiary);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	position: relative;
-	padding: 1rem 0;
 }
 
 .header .header_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*vertical */
 }
 
-.header .header_nav ul {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    font-weight: bold;
-    font-size: 2.25rem;
+.header img {
+	width: 10rem;
 }
 
-.header .header_nav li a{
-    color: var(--dark);
-	transition: all 0.5 ease;
+.header .header_nav {
+	display: flex;
+	gap: 3rem;
 }
 
-.header .header_nav li a:hover, 
-.header .header_nav li a.active{
+.header .header_nav li a {
+	color: var(--dark);
+	font-weight: bold;
+	font-size: 2rem;
+	transition: all 0.5s ease;
+}
+
+.header .header_nav li a:hover,
+.header .header_nav li a.active {
 	color: var(--primary);
-	transition: all 0.5 ease;
+	transition: all 0.5s ease;
+}
+
+.header .toggle_menu {
+	display: none;
+}
+
+/* -------header - mobile---- */
+.header .toggle_menu span {
+	width: 3rem;
+	height: 0.3rem;
+	border: 1px solid var(--primary);
+	border-radius: 1rem;
+	background-color: var(--primary);
+	transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		background-color: var(--tertiary);
+		z-index: 999;
+	}
+	.header .toggle_menu {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		transition: .5s ease;
+	}
+	.header .header_nav {
+		display: flex;
+		flex-direction: column;
+		position:fixed;
+		background-color: var(--tertiary);
+		width: 50%;
+		height: 100vh;
+		padding: 3rem;
+		top: 0;
+		margin-top: 6rem;
+		z-index: 99;
+		right: -100%;
+		transition: .5s ease;
+	}
+
+	.header .header_nav.open {
+		right: 0;
+		transition: all .5s ease;
+	}
+	
+	.header .toggle_menu.open span:first-child{
+		transform: translate(0, 10px) rotate(225deg);
+		transition: all 0.5s ease;
+	}
+
+	.header .toggle_menu.open span:nth-child(2){
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+
+	.header .toggle_menu.open span:last-child{
+		transform: translate(0, -6px) rotate(-225deg);
+		transition: all 0.5s ease;
+	}
+
+	.backDrop {
+		display: none;
+	}
+
+	.backDrop.open {
+		display:block;
+		background-color: rgba(0, 0, 0, 0.7);
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 99;
+	}
 }
 
 /* TOP */
 
 .top {
-    background-color: var(--secondary);
-    padding: 2rem 0;
+	background-color: var(--secondary);
+	padding: 2rem 0;
 	text-align: center;
 }
 
@@ -179,12 +258,12 @@ img {
 }
 
 .top small {
-    font-family: Truculenta;
+	font-family: Truculenta;
 	font-weight: 200;
-    letter-spacing: .5rem;
+	letter-spacing: 0.5rem;
 }
 
-.top h4{
+.top h4 {
 	font-size: 2.5rem;
 	font-weight: bold;
 	max-width: 10rem;
@@ -210,7 +289,7 @@ img {
 }
 
 .homeBanner .homeBanner_txt--title li {
-	line-height: 4.5rem; 
+	line-height: 4.5rem;
 }
 
 .homeBanner .homeBanner_txt--title li:first-child {
@@ -226,21 +305,21 @@ img {
 	margin-left: 5.5rem;
 }
 
-.homeBanner .homeBanner_txt--title li:last-child{
-	font-size: 4.5rem; 	
+.homeBanner .homeBanner_txt--title li:last-child {
+	font-size: 4.5rem;
 	color: var(--primary);
 	font-weight: 200;
 }
 
-.homeBanner .homeBanner_txt--title li:last-child::before{
+.homeBanner .homeBanner_txt--title li:last-child::before {
 	background-color: var(--primary);
 	position: relative;
-	height: .2rem;
+	height: 0.2rem;
 	width: 12rem;
 	display: inline-block;
 	content: " ";
 	bottom: 1rem;
-	right: .5rem;
+	right: 0.5rem;
 }
 
 .homeBanner .homeBanner_txt p {
@@ -276,10 +355,10 @@ img {
 	position: relative;
 	content: " ";
 	background-color: var(--primary);
-	height: .2rem;
+	height: 0.2rem;
 	width: 80rem;
 	bottom: 1rem;
-	right: .5rem;
+	right: 0.5rem;
 	gap: 1rem;
 }
 
@@ -312,12 +391,12 @@ img {
 	font-weight: 500;
 }
 
-.homeCatalog h2::after{
+.homeCatalog h2::after {
 	display: inline-block;
 	content: " ";
 	background-color: var(--primary);
 	position: relative;
-	height: .2rem;
+	height: 0.2rem;
 	width: 85rem;
 	bottom: 1rem;
 	left: 0.8rem;
@@ -357,7 +436,7 @@ img {
 }
 
 .footer .footer_wrapper {
-	display: flex; 
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -369,17 +448,13 @@ img {
 
 .footer .footer_social li a {
 	color: var(--light);
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 }
 
 .footer .footer_social li a:hover {
 	color: var(--primary);
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 }
-
-
-
-
 /* ASSETS */
 
 .btn {
@@ -405,12 +480,12 @@ img {
 
 .btn-nobg {
 	color: var(--primary);
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 }
 
 .btn-nobg:hover {
 	color: var(--secondary);
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 }
 
 .card {
@@ -437,13 +512,6 @@ img {
 	margin: 1rem 0;
 }
 
-
-
-
-
-/* ABOUT PAGE */
-
-
 /* ABOUT BANNER */
 
 .aboutBanner {
@@ -462,17 +530,15 @@ img {
 	width: 85rem;
 }
 
-.aboutBanner .aboutBanner_img small::before{
+.aboutBanner .aboutBanner_img small::before {
 	display: inline-block;
 	content: " ";
 	width: 30rem;
-	height: .2rem;
+	height: 0.2rem;
 	background-color: var(--dark);
 	position: relative;
-	bottom: .35rem;
+	bottom: 0.35rem;
 }
-
-
 
 .aboutBanner .aboutBanner_txt h2 {
 	font-size: 5rem;
@@ -484,20 +550,18 @@ img {
 	margin: 2rem 0;
 }
 
-.aboutBanner .aboutBanner_txt ul{
+.aboutBanner .aboutBanner_txt ul {
 	display: flex;
 	margin-top: 5rem;
 	gap: 5rem;
 }
 
-.aboutBanner .aboutBanner_txt ul li a i{
+.aboutBanner .aboutBanner_txt ul li a i {
 	color: var(--dark);
 	scale: 200%;
 }
 
-
 /* ABOUT STYLES */
-
 .aboutStyle {
 	background-color: var(--dark);
 	padding: 5rem;
@@ -523,4 +587,3 @@ img {
 	font-size: 2rem;
 	font-weight: 200;
 }
-
