@@ -342,6 +342,7 @@ img {
 .homeBanner .homeBanner_txt p {
 	margin: 2rem 0;
 	max-width: 60rem;
+	text-align: justify;
 }
 
 .homeBanner .homeBanner_img {
@@ -440,6 +441,7 @@ img {
 
 .homeAbout .homeAbout_txt p {
 	margin-bottom: 2rem;
+	text-align: justify;
 }
 
 @media screen and (max-width:520px) {
@@ -696,6 +698,7 @@ img {
 
 .aboutBanner .aboutBanner_txt p {
 	margin: 2rem 0;
+	text-align: justify;
 }
 
 .aboutBanner .aboutBanner_txt ul {
@@ -743,7 +746,6 @@ img {
 		justify-content: center;
 	}
 	
-
 	.aboutBanner .aboutBanner_txt ul {
 		margin-top: 5rem;
 		justify-content: center;
@@ -776,6 +778,7 @@ img {
 	color: var(--light);
 	font-size: 2rem;
 	font-weight: 200;
+	text-align: justify;
 }
 
 @media screen and (max-width: 520px) {
@@ -793,4 +796,85 @@ img {
 		gap: 6rem;
 		justify-content: center;
 	}
+}
+
+/* CATALOG PAGE */
+
+.catalogBanner {
+	background: linear-gradient(rgba(255,255,255, 0.5),rgba(255,255,255, 0.5)),url(./img/img/catalog-banner.png);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+}
+
+.catalogBanner h1 {
+	font-size: 7rem;
+	font-weight: bold;
+	color: var(--primary);
+}
+
+.catalogBanner h4 {
+	font-size: 2.5rem;
+	max-width: 40rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* CATALOG PACKAGES */
+
+
+.catalogPackages h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 7rem;
+	font-weight: bold;
+	color: var(--primary);
+	padding: 4rem 0;
+}
+
+.catalogPackages .package:nth-child(odd){
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: justify;
+}
+
+.catalogPackages .package:nth-child(even) {
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	background-color: var(--tertiary);
+	text-align: justify;
+}
+
+.catalogPackages .package p:nth-child(even) {
+	margin-right: 5rem;
+}
+
+
+.catalogPackages .catalog__img {
+	width: 60rem;
+}
+
+
+.catalogPackages .catalog__txt h1 {
+	display: flex;
+	font-size: 7rem;
+	font-weight: bold;
+	justify-content: center;
+	color: var(--primary);
+}
+
+.catalogPackages .catalog__txt p {
+	max-width: 50rem;
+	justify-content: center;
+	margin-left: 5rem;
+	padding-bottom: 10rem;
 }
