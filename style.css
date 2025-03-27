@@ -1076,6 +1076,7 @@ img {
 .updateRecent .updateRecent__img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 5rem;
 }
 
 .updateRecent .updateRecent__img .proj__img .proj__info {
