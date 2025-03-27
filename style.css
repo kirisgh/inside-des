@@ -532,7 +532,7 @@ img {
 /* CALL TO ACTION */
 
 .cta {
-	padding: 3rem;
+	padding: 5rem;
 	background-color: var(--primary);
 	text-align: center;
 }
@@ -543,7 +543,7 @@ img {
 }
 
 .cta p {
-	margin: 1rem 0;
+	margin: 2rem 0;
 }
 
 @media screen and (max-width: 520px) {
