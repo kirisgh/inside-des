@@ -7,6 +7,7 @@
     <title>Inside Style</title>
     <link rel="shortcut icon" href="/img/img/LOGO.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -28,6 +29,8 @@
             </div>
         </div>
     </header>
+
+    <div class="backDrop"></div>
 
     <section class="aboutBanner">
         <div class="container">
@@ -56,42 +59,42 @@
             <h2>Latest Style</h2>
             <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aliquid odio animi sunt delectus saepe.</h4>
             <div class="aboutStyle_wrapper">
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                         <img src="/img/img/latest-1.png" alt="">
                         <div class="card_details">
                             <h4>Formal Theme</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, repudiandae cupiditate excepturi tenetur exercitationem dolorum?</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="/img/img/latest-2.png" alt="">
                         <div class="card_details">
                             <h4>Modern Theme</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, repudiandae cupiditate excepturi tenetur exercitationem dolorum?</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <img src="/img/img/latest-3.png" alt="">
                         <div class="card_details">
                             <h4>Boho Theme</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, repudiandae cupiditate excepturi tenetur exercitationem dolorum?</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <img src="/img/img/latest-4.png" alt="">
                         <div class="card_details">
                             <h4>Minimalist Theme</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, repudiandae cupiditate excepturi tenetur exercitationem dolorum?</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <img src="/img/img/latest-5.png" alt="">
                         <div class="card_details">
                             <h4>Wood Theme</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, repudiandae cupiditate excepturi tenetur exercitationem dolorum?</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"data-aos="fade-left">
                         <img src="/img/img/latest-6.png" alt="">
                         <div class="card_details">
                             <h4>Spanish Theme</h4>
@@ -126,5 +129,9 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/script.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
