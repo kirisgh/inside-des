@@ -385,8 +385,8 @@ img {
 }
 
 .homeBanner .homeBanner_img {
-	display: flex;
 	gap: 2rem;
+	display: flex;
 }
 
 .homeBanner .homeBanner_img img:last-child {
