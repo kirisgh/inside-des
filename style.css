@@ -140,7 +140,21 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/*vertical */
+	transition: all 0.5s ease;
+}
+
+.header .header_wrapper.open {
+	background-color: var(--tertiary);
+	border-radius: 2rem;
+	padding: 1rem;
+	position: fixed;
+	width: 80rem;
+	max-width: 100%;
+	margin: 0 auto;
+	left: 0%;
+	right: 0;
+	z-index: 999;
+	transition: all 0.5s ease;
 }
 
 .header img {
