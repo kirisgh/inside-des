@@ -191,12 +191,12 @@ img {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
-		transition: .5s ease;
+		transition: 0.5s ease;
 	}
 	.header .header_nav {
 		display: flex;
 		flex-direction: column;
-		position:fixed;
+		position: fixed;
 		background-color: var(--tertiary);
 		width: 50%;
 		height: 100vh;
@@ -205,42 +205,42 @@ img {
 		margin-top: 6rem;
 		z-index: 99;
 		right: -100%;
-		transition: .5s ease;
+		transition: 0.5s ease;
 	}
 
 	.header .header_nav.open {
 		right: 0;
-		transition: all .5s ease;
+		transition: all 0.5s ease;
 	}
-	
-	.header .toggle_menu.open span:first-child{
+
+	.header .toggle_menu.open span:first-child {
 		transform: translate(0, 10px) rotate(225deg);
 		transition: all 0.5s ease;
 	}
 
-	.header .toggle_menu.open span:nth-child(2){
+	.header .toggle_menu.open span:nth-child(2) {
 		opacity: 0;
 		transition: all 0.5s ease;
 	}
 
-	.header .toggle_menu.open span:last-child{
+	.header .toggle_menu.open span:last-child {
 		transform: translate(0, -6px) rotate(-225deg);
 		transition: all 0.5s ease;
 	}
 
 	.backDrop {
-		display:block;
+		display: block;
 		background-color: rgba(0, 0, 0, 0.7);
 		opacity: 0%;
 		position: fixed;
 		width: 100%;
 		height: 100vh;
 		z-index: 99;
-		transition: .5s ease;
+		transition: 0.5s ease;
 	}
 
 	.backDrop.open {
-		display:block;
+		display: block;
 		background-color: rgba(0, 0, 0, 0.7);
 		opacity: 100%;
 		position: fixed;
@@ -249,7 +249,7 @@ img {
 		width: 100%;
 		height: 100vh;
 		z-index: 99;
-		transition: .5s ease;
+		transition: 0.5s ease;
 	}
 }
 
@@ -281,7 +281,7 @@ img {
 	margin: 0 auto;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.top {
 		background-color: var(--secondary);
 		padding: 8rem 0 2rem 0;
@@ -357,19 +357,18 @@ img {
 
 /* Home Banner Mobile */
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px){
 	.homeBanner .homeBanner_img img {
 		display: none;
 	}
 
-
-	.homeBanner .homeBanner_txt--title li:first-child{
+	.homeBanner .homeBanner_txt--title li:first-child {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
 	}
 
-	.homeBanner .homeBanner_txt--title li:nth-child(2){
+	.homeBanner .homeBanner_txt--title li:nth-child(2) {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
@@ -444,12 +443,12 @@ img {
 	text-align: justify;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.homeAbout .homeAbout_wrapper {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.homeAbout h2::before {
 		display: none;
 	}
@@ -477,7 +476,6 @@ img {
 }
 
 /* CATALOG */
-
 
 .homeCatalog .homeCatalog_wrapper {
 	margin-top: 2rem;
@@ -511,8 +509,7 @@ img {
 	left: 0.8rem;
 }
 
-@media screen and (max-width:520px) {
-	
+@media screen and (max-width: 520px) {
 	.homeCatalog h2::after {
 		display: inline-block;
 		content: " ";
@@ -581,7 +578,7 @@ img {
 	transition: all 0.5s ease;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.footer .footer_wrapper {
 		display: flex;
 		flex-direction: column;
@@ -651,7 +648,7 @@ img {
 
 /* ASSETS MOBILE */
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.btn {
 		display: flex;
 		justify-content: center;
@@ -713,7 +710,6 @@ img {
 }
 
 @media screen and (max-width: 520px) {
-
 	.aboutBanner_wrapper {
 		display: flex;
 		margin-top: 10rem;
@@ -726,7 +722,7 @@ img {
 		justify-content: center;
 		display: flex;
 	}
-	
+
 	.aboutBanner .aboutBanner_img small::before {
 		display: inline-block;
 		content: " ";
@@ -736,7 +732,7 @@ img {
 		position: relative;
 		bottom: 0.35rem;
 	}
-	
+
 	.aboutBanner .aboutBanner_txt h2 {
 		display: flex;
 		font-size: 4rem;
@@ -745,7 +741,7 @@ img {
 		margin-top: -4rem;
 		justify-content: center;
 	}
-	
+
 	.aboutBanner .aboutBanner_txt ul {
 		margin-top: 5rem;
 		justify-content: center;
@@ -789,7 +785,7 @@ img {
 		font-weight: 200;
 		margin-bottom: 2rem;
 	}
-	
+
 	.aboutStyle .aboutStyle_wrapper {
 		margin-top: 1rem;
 		display: flex;
@@ -802,14 +798,18 @@ img {
 /* CATALOG PAGE */
 
 .catalogBanner {
-	background: linear-gradient(rgba(255,255,255, 0.5),rgba(255,255,255, 0.5)),url(./img/img/catalog-banner.png);
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.5)
+		),
+		url(./img/img/catalog-banner.png);
 	width: 100%;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
 	align-items: center;
 }
 
@@ -839,7 +839,7 @@ img {
 	padding: 5rem;
 }
 
-.catalogPackages .package:nth-child(odd){
+.catalogPackages .package:nth-child(odd) {
 	padding: 5rem 0;
 	display: flex;
 	flex-direction: row;
@@ -860,11 +860,9 @@ img {
 	margin-right: 5rem;
 }
 
-
 .catalogPackages .catalog__img {
 	width: 60rem;
 }
-
 
 .catalogPackages .catalog__txt h1 {
 	display: flex;
@@ -881,7 +879,7 @@ img {
 	padding-bottom: 10rem;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.catalogPackages .catalog__txt h1 {
 		display: flex;
 		justify-content: center;
@@ -889,7 +887,7 @@ img {
 		margin: 0 auto;
 	}
 
-	.catalogPackages .package:nth-child(odd){
+	.catalogPackages .package:nth-child(odd) {
 		padding: 0;
 		display: flex;
 		flex-direction: column;
@@ -916,7 +914,6 @@ img {
 	gap: 10rem;
 }
 
-
 .updatesBanner .updatesBanner__txt {
 	text-align: center;
 }
@@ -933,16 +930,13 @@ img {
 	text-align: justify;
 }
 
-@media screen and (max-width:520px){
-
-
-	.updatesBanner .updatesBanner__wrapper{
+@media screen and (max-width: 520px) {
+	.updatesBanner .updatesBanner__wrapper {
 		display: flex;
 		flex-direction: column;
 		padding: 10rem 0;
 		gap: 5rem;
 	}
-
 }
 
 /* UPDATE DESIGNS */
@@ -966,14 +960,13 @@ img {
 	padding-bottom: 5rem;
 }
 
-
 .updateDesigns .updateDesigns__designs {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
 }
 
-.updateDesigns .updateDesigns__designs .block{
+.updateDesigns .updateDesigns__designs .block {
 	display: block;
 	background-color: var(--tertiary);
 	width: 30rem;
@@ -1007,17 +1000,17 @@ img {
 }
 
 .updateDesigns .updateDesigns__categories .categoryTXT .category,
-.updateDesigns .updateDesigns__categories .categoryTXT .numbers  {
+.updateDesigns .updateDesigns__categories .categoryTXT .numbers {
 	font-weight: bold;
 	font-size: 2rem;
 }
 
 .updateDesigns .updateDesigns__categories .categoryTXT .category li,
-.updateDesigns .updateDesigns__categories .categoryTXT .numbers li{
+.updateDesigns .updateDesigns__categories .categoryTXT .numbers li {
 	margin-bottom: 3rem;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
 	.updateDesigns .updateDesigns__wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -1040,7 +1033,7 @@ img {
 		gap: 2rem;
 	}
 
-	.updateDesigns .updateDesigns__designs .block{
+	.updateDesigns .updateDesigns__designs .block {
 		display: block;
 		background-color: var(--tertiary);
 		width: 30rem;
@@ -1050,14 +1043,13 @@ img {
 	}
 
 	.updateDesigns .updateDesigns__categories .categoryTXT .category,
-	.updateDesigns .updateDesigns__categories .categoryTXT .numbers  {
-	font-weight: bold;
-	font-size: 2rem;
-	text-align: center;
-	margin: 0 auto;
+	.updateDesigns .updateDesigns__categories .categoryTXT .numbers {
+		font-weight: bold;
+		font-size: 2rem;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
-}
-
 
 /* UPDATES PROJECTS */
 
@@ -1092,13 +1084,12 @@ img {
 }
 
 .updateRecent .updateRecent__img .proj__img .proj__info .proj__name i,
-.updateRecent .updateRecent__img .proj__img .proj__info .proj__date i{
+.updateRecent .updateRecent__img .proj__img .proj__info .proj__date i {
 	position: relative;
-	top: .35rem;
+	top: 0.35rem;
 }
 
-@media screen and (max-width:520px) {
-
+@media screen and (max-width: 520px) {
 	.updateRecent .updateRecent__img {
 		display: flex;
 		flex-direction: column;
@@ -1107,3 +1098,123 @@ img {
 	}
 }
 
+/* CONTACTS PAGE */
+
+.contactUs {
+	background-color: var(--tertiary);
+	align-content: center;
+	width: 100%;
+	height: 84.2vh;
+}
+
+.contactUs .contactUs__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 10rem;
+}
+
+.contactUs .contactUs__text h1 {
+	color: var(--primary);
+	font-size: 7rem;
+	font-weight: bold;
+}
+
+.contactUs .contactUs__text p {
+	margin-bottom: 2rem;
+}
+
+.contactUs .contactUs__text form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.contactUs .contactUs__text form input,
+.contactUs .contactUs__text form textarea {
+	background-color: var(--tertiary);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 2rem;
+	font-family: truculenta;
+	font-size: 1.8rem;
+	width: 70rem;
+}
+
+.contactUs .contactUs__text form textarea {
+	height: 13rem;
+}
+
+.contactUs .contactUs__text a {
+	background-color: var(--dark);
+	color: var(--light);
+	margin-top: 2rem;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1rem;
+}
+
+.contactUs .contactUs__info {
+	display: block;
+	background-color: var(--dark);
+	width: 45rem;
+	height: 30rem;
+	padding: 1rem;
+	margin-top: 10rem;
+	color: var(--light);
+}
+
+.contactUs .contactUs__info .info{
+	display: flex;
+	gap: 1rem;
+	padding: 1rem 9rem;
+	max-width: 100rem;
+}
+
+.contactUs .contactUs__info h2 {
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.contactUs .contactUs__info .info i{
+	color: var(--secondary);
+	position: relative;
+	top: .6rem;
+}
+
+.contactUs .contactUs__info .info h4{
+	font-size: 2rem;
+}
+
+/* CONTACT US MOBILE */
+
+@media screen and (max-width:520px) {
+
+	.contactUs {
+		background-color: var(--tertiary);
+		align-content: center;
+		width: 100%;
+		height: 120vh;
+	}
+
+	.contactUs .contactUs__text form input,
+.contactUs .contactUs__text form textarea {
+	background-color: var(--tertiary);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 2rem;
+	font-family: truculenta;
+	font-size: 1.8rem;
+	width: 45rem;
+}
+
+	.contactUs .contactUs__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		gap: 2rem;
+	}
+}
