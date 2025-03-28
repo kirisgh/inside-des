@@ -146,16 +146,24 @@ img {
 .header .header_wrapper.open {
 	background-color: var(--tertiary);
 	border-radius: 2rem;
-	padding: 1rem;
+	padding: 2rem;
 	position: fixed;
-	width: 80rem;
+	width: 70rem;
+	border: .5rem solid var(--dark);
 	max-width: 100%;
-	margin: 0 auto;
+	margin: 1rem auto;
 	left: 0%;
 	right: 0;
 	z-index: 999;
+	justify-content: center;
+	text-align: center;
 	transition: all 0.5s ease;
 }
+
+.header .header_wrapper.open img{
+	display: none;
+}
+
 
 .header img {
 	width: 10rem;
@@ -193,20 +201,37 @@ img {
 	transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
 	.header {
 		position: fixed;
+		max-width: 100%;
 		width: 100%;
 		left: 0;
 		background-color: var(--tertiary);
 		z-index: 999;
 	}
+
+	.header .header_wrapper.open {
+	padding: unset;
+	border-radius: unset;
+	position: unset;
+	border: unset;
+	transition: none;
+	margin: unset;
+	justify-content: space-between;
+	}
+
+	.header .header_wrapper.open img{
+		display: block;
+	}
+
 	.header .toggle_menu {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 		transition: 0.5s ease;
 	}
+
 	.header .header_nav {
 		display: flex;
 		flex-direction: column;
@@ -1207,10 +1232,11 @@ img {
 @media screen and (max-width:520px) {
 
 	.contactUs {
+		padding-top: 12rem;
 		background-color: var(--tertiary);
 		align-content: center;
 		width: 100%;
-		height: 120vh;
+		height: 140vh;
 	}
 
 	.contactUs .contactUs__text form input,
@@ -1223,6 +1249,16 @@ img {
 	font-family: truculenta;
 	font-size: 1.8rem;
 	width: 45rem;
+}
+
+.contactUs .contactUs__info {
+	display: block;
+	background-color: var(--dark);
+	width: 45rem;
+	height: 30rem;
+	padding: 1rem;
+	margin-top: 10rem;
+	color: var(--light);
 }
 
 	.contactUs .contactUs__wrapper {

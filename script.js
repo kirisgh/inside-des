@@ -10,7 +10,7 @@ toggleMenu.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= 75) {
+    if (window.scrollY >= 100) {
         headerWrapper.classList.add("open");
     } else {
         headerWrapper.classList.remove("open");
